@@ -1,0 +1,2012 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Экстрасенс Ирма | Бесплатная диагностика</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1445946530340630');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1445946530340630&ev=PageView&noscript=1" />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --purple-deep: #051a18;
+      --purple-mid: #0f766e;
+      --purple-light: #14b8a6;
+      --gold: #5eead4;
+      --gold-soft: #ccfbf1;
+      --glass: rgba(6, 42, 40, 0.84);
+      --glass-border: rgba(167, 243, 208, 0.14);
+      --text: #ecfef9;
+      --text-muted: rgba(236, 254, 249, 0.88);
+      --shadow-btn: 0 12px 40px rgba(0, 0, 0, 0.4);
+      --radius-lg: 24px;
+      --radius-pill: 999px;
+    }
+
+    @keyframes panel-in {
+      from {
+        opacity: 0;
+        transform: translateY(28px) scale(0.985);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes photo-reveal {
+      from {
+        opacity: 0;
+        transform: scale(0.94);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes mystic-glow {
+      0%, 100% {
+        box-shadow:
+          0 25px 80px rgba(0, 0, 0, 0.45),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 0 0 rgba(94, 234, 212, 0);
+      }
+      50% {
+        box-shadow:
+          0 25px 80px rgba(0, 0, 0, 0.45),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 0 42px rgba(13, 148, 136, 0.4),
+          0 0 72px rgba(94, 234, 212, 0.18);
+      }
+    }
+
+    @keyframes frame-ring {
+      0%, 100% {
+        box-shadow: var(--shadow-btn), 0 0 0 0 rgba(94, 234, 212, 0.28);
+      }
+      50% {
+        box-shadow: var(--shadow-btn), 0 0 28px 2px rgba(45, 212, 191, 0.35);
+      }
+    }
+
+    @keyframes submit-cta-pulse-glow {
+      0%, 100% {
+        box-shadow:
+          var(--shadow-btn),
+          0 0 14px rgba(45, 212, 191, 0.22),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+      }
+      50% {
+        box-shadow:
+          var(--shadow-btn),
+          0 0 28px rgba(45, 212, 191, 0.4),
+          inset 0 1px 0 rgba(255, 255, 255, 0.26);
+      }
+    }
+
+    @keyframes title-shimmer {
+      0% { background-position: 120% 50%; }
+      100% { background-position: -120% 50%; }
+    }
+
+    @keyframes page-bg-photo-drift {
+      0% {
+        transform: scale(1.06) translate(0%, 0%);
+      }
+      100% {
+        transform: scale(1.14) translate(-1.8%, 1.2%);
+      }
+    }
+
+    @keyframes page-bg-mist-shift {
+      0% {
+        background-position:
+          50% 0%,
+          20% 80%,
+          90% 30%,
+          65% 25%;
+      }
+      50% {
+        background-position:
+          40% 8%,
+          75% 35%,
+          15% 70%,
+          30% 50%;
+      }
+      100% {
+        background-position:
+          55% 4%,
+          40% 60%,
+          85% 55%,
+          75% 18%;
+      }
+    }
+
+    @keyframes page-bg-mist-glow {
+      0%, 100% { opacity: 0.72; }
+      45% { opacity: 0.95; }
+    }
+
+    @keyframes page-bg-orb-float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      40% { transform: translate(10%, 14%) scale(1.12); }
+      70% { transform: translate(-8%, 6%) scale(0.94); }
+    }
+
+    @keyframes page-bg-vignette-breathe {
+      0%, 100% { opacity: 0.62; }
+      50% { opacity: 0.88; }
+    }
+
+    @keyframes headline-glow {
+      0%, 100% {
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.75), 0 0 20px rgba(94, 234, 212, 0);
+      }
+      50% {
+        text-shadow:
+          0 2px 20px rgba(0, 0, 0, 0.75),
+          0 0 28px rgba(94, 234, 212, 0.45);
+      }
+    }
+
+    @keyframes ribbon-pulse {
+      0%, 100% { transform: scale(1); filter: brightness(1); }
+      50% { transform: scale(1.02); filter: brightness(1.06); }
+    }
+
+    @keyframes ribbon-candle {
+      0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+        box-shadow:
+          0 4px 22px rgba(13, 148, 136, 0.38),
+          inset 0 1px 0 rgba(255, 255, 255, 0.48),
+          0 0 16px rgba(94, 234, 212, 0.12);
+      }
+      8% {
+        filter: brightness(1.08);
+        box-shadow:
+          0 4px 30px rgba(13, 148, 136, 0.52),
+          inset 0 1px 0 rgba(255, 255, 255, 0.58),
+          0 0 32px rgba(167, 243, 208, 0.32);
+      }
+      9% { filter: brightness(0.93); }
+      17% { transform: scale(1.01); filter: brightness(1.04); }
+      19% { filter: brightness(0.98); }
+      28% {
+        filter: brightness(1.06);
+        box-shadow:
+          0 4px 26px rgba(13, 148, 136, 0.46),
+          inset 0 1px 0 rgba(255, 255, 255, 0.52),
+          0 0 26px rgba(94, 234, 212, 0.22);
+      }
+      30% { filter: brightness(0.95); }
+      41% { transform: scale(1.006); filter: brightness(1.02); }
+      51% { filter: brightness(1.07); }
+      53% { filter: brightness(0.96); }
+      63% {
+        box-shadow:
+          0 4px 24px rgba(13, 148, 136, 0.42),
+          inset 0 1px 0 rgba(255, 255, 255, 0.5),
+          0 0 22px rgba(94, 234, 212, 0.18);
+      }
+      74% { filter: brightness(1.05); }
+      76% { filter: brightness(0.99); }
+    }
+
+    @keyframes stat-card-candle {
+      0%, 100% {
+        border-color: rgba(94, 234, 212, 0.28);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 0 0 rgba(94, 234, 212, 0);
+      }
+      22% {
+        border-color: rgba(94, 234, 212, 0.42);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.08),
+          0 0 22px rgba(94, 234, 212, 0.14);
+      }
+      24% {
+        border-color: rgba(94, 234, 212, 0.26);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.05),
+          0 0 8px rgba(94, 234, 212, 0.06);
+      }
+      55% {
+        border-color: rgba(94, 234, 212, 0.38);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.07),
+          0 0 18px rgba(45, 212, 191, 0.12);
+      }
+      88% {
+        border-color: rgba(94, 234, 212, 0.32);
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          0 0 12px rgba(94, 234, 212, 0.1);
+      }
+    }
+
+    @keyframes gold-sparkle {
+      0%, 100% { text-shadow: 0 0 16px rgba(94, 234, 212, 0.4); }
+      50% { text-shadow: 0 0 26px rgba(167, 243, 208, 0.75); }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+      color: var(--text);
+      background-color: var(--purple-deep);
+    }
+
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .page-bg-parallax {
+      position: absolute;
+      inset: -14%;
+      pointer-events: none;
+      overflow: hidden;
+      will-change: transform;
+    }
+
+    .page-bg-photo {
+      position: absolute;
+      inset: 0;
+      background: url('photo2.jpeg?v=2') center center / cover no-repeat;
+      animation: page-bg-photo-drift 55s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+
+    .page-bg-veil {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        165deg,
+        rgba(2, 14, 13, 0.94) 0%,
+        rgba(2, 12, 14, 0.91) 45%,
+        rgba(1, 8, 10, 0.96) 100%
+      );
+    }
+
+    .page-bg-mist {
+      position: absolute;
+      inset: 0;
+      will-change: transform;
+      background:
+        radial-gradient(ellipse 110% 85% at 50% -5%, rgba(13, 148, 136, 0.38) 0%, transparent 52%),
+        radial-gradient(ellipse 55% 45% at 88% 55%, rgba(94, 234, 212, 0.14) 0%, transparent 48%),
+        radial-gradient(ellipse 65% 55% at 8% 72%, rgba(15, 118, 110, 0.32) 0%, transparent 52%),
+        radial-gradient(ellipse 80% 70% at 70% 15%, rgba(20, 184, 166, 0.16) 0%, transparent 45%);
+      background-size: 100% 100%, 130% 130%, 120% 120%, 115% 115%;
+      background-repeat: no-repeat;
+      mix-blend-mode: screen;
+      opacity: 0.82;
+      animation:
+        page-bg-mist-shift 28s ease-in-out infinite alternate,
+        page-bg-mist-glow 14s ease-in-out infinite;
+    }
+
+    .page-bg-orbs {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      overflow: hidden;
+      pointer-events: none;
+      will-change: transform;
+    }
+
+    .page-bg-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(72px);
+      opacity: 0.38;
+      animation: page-bg-orb-float 24s ease-in-out infinite;
+      will-change: transform;
+    }
+
+    .page-bg-orb--1 {
+      width: min(52vw, 420px);
+      height: min(52vw, 420px);
+      background: radial-gradient(circle, rgba(13, 148, 136, 0.82) 0%, transparent 68%);
+      top: -22%;
+      left: -18%;
+      animation-duration: 26s;
+    }
+
+    .page-bg-orb--2 {
+      width: min(44vw, 360px);
+      height: min(44vw, 360px);
+      background: radial-gradient(circle, rgba(52, 211, 153, 0.38) 0%, transparent 65%);
+      bottom: -12%;
+      right: -14%;
+      animation-duration: 21s;
+      animation-delay: -8s;
+      opacity: 0.45;
+    }
+
+    .page-bg-orb--3 {
+      width: min(38vw, 300px);
+      height: min(38vw, 300px);
+      background: radial-gradient(circle, rgba(6, 95, 70, 0.72) 0%, transparent 70%);
+      top: 38%;
+      left: 55%;
+      animation-duration: 19s;
+      animation-delay: -4s;
+      opacity: 0.32;
+    }
+
+    .page-bg-orb--4 {
+      width: min(28vw, 220px);
+      height: min(28vw, 220px);
+      background: radial-gradient(circle, rgba(167, 243, 208, 0.28) 0%, transparent 72%);
+      top: 12%;
+      right: 8%;
+      animation-duration: 17s;
+      animation-delay: -11s;
+      filter: blur(56px);
+    }
+
+    .page-bg-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse 74% 74% at 50% 46%,
+        transparent 0%,
+        transparent 28%,
+        rgba(0, 12, 11, 0.55) 62%,
+        rgba(0, 6, 8, 0.9) 100%
+      );
+      animation: page-bg-vignette-breathe 18s ease-in-out infinite;
+    }
+
+    .wrap {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(20px, 4vw, 48px) clamp(16px, 4vw, 32px) clamp(40px, 6vw, 64px);
+      perspective: clamp(960px, 120vw, 1500px);
+      perspective-origin: 50% 40%;
+    }
+
+    .panel {
+      width: 100%;
+      max-width: 640px;
+      background: var(--glass);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 22px 64px rgba(0, 0, 0, 0.42),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      overflow: visible;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      animation: panel-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+
+    .title-line {
+      width: min(200px, 55%);
+      height: 3px;
+      margin: 10px auto 14px;
+      border-radius: 3px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.28) 45%,
+        var(--gold) 50%,
+        rgba(255, 255, 255, 0.28) 55%,
+        transparent 100%
+      );
+      opacity: 0.85;
+      flex-shrink: 0;
+    }
+
+    .offer-ribbon,
+    .notice-ribbon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      padding: 8px 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      line-height: 1.35;
+      border-radius: var(--radius-pill);
+      text-align: center;
+    }
+
+    .offer-ribbon {
+      margin: 0 auto 12px;
+      color: #042f2c;
+      background: linear-gradient(180deg, #ecfdf5 0%, var(--gold) 42%, #0d9488 100%);
+      box-shadow:
+        0 4px 24px rgba(13, 148, 136, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    .notice-ribbon {
+      margin: 12px auto 0;
+      padding: 5px 14px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      line-height: 1.3;
+      color: rgba(255, 248, 248, 0.92);
+      background: linear-gradient(180deg, #6b1c20 0%, #521418 45%, #3a1012 100%);
+      border: 1px solid rgba(120, 60, 60, 0.45);
+      border-radius: 12px;
+      box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    .photo-overlay h1 {
+      margin: 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.15rem, 4.6vw, 2.35rem);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.75);
+      color: var(--text);
+      animation: headline-glow 6s ease-in-out infinite;
+    }
+
+    .stat-card {
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(94, 234, 212, 0.32);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .stat-card p {
+      margin: 0;
+      font-size: clamp(14px, 3.5vw, 17px);
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+
+    .stat-card strong {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 1.12em;
+      text-shadow: 0 0 16px rgba(94, 234, 212, 0.4);
+      animation: gold-sparkle 3.2s ease-in-out infinite;
+    }
+
+    .container {
+      padding: clamp(20px, 4vw, 32px) clamp(18px, 4vw, 32px) clamp(28px, 5vw, 40px);
+    }
+
+    .photo-block {
+      text-align: center;
+      margin: 0 0 10px 0;
+    }
+
+    .hero-warm-line {
+      margin: 0 0 16px;
+      padding: 0 clamp(12px, 4vw, 20px);
+      max-width: 28em;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+      font-size: clamp(15px, 3.6vw, 18px);
+      font-weight: 600;
+      line-height: 1.45;
+      letter-spacing: 0.02em;
+      text-align: center;
+      color: rgba(236, 254, 249, 0.94);
+    }
+
+    .notice-under-photo {
+      margin: 0 0 18px 0;
+      text-align: center;
+    }
+
+    .notice-under-photo .notice-ribbon {
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+      display: inline-flex;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+    .photo-highlights {
+      margin: 14px 0 12px;
+      padding: 16px 18px 18px;
+      text-align: center;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(167, 243, 208, 0.12);
+    }
+
+    .photo-highlights p {
+      margin: 0;
+      padding: 8px 0;
+      font-size: clamp(16px, 3.7vw, 18px);
+      font-weight: 600;
+      line-height: 1.45;
+      color: rgba(236, 254, 249, 0.9);
+    }
+
+    .photo-highlights p + p {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .photo-urgency {
+      margin: 0 0 16px;
+      padding: 12px 16px;
+      text-align: center;
+      font-size: clamp(15px, 3.4vw, 17px);
+      font-weight: 600;
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+      color: rgba(204, 251, 241, 0.95);
+      background: rgba(13, 148, 136, 0.14);
+      border: 1px solid rgba(94, 234, 212, 0.22);
+      border-radius: 12px;
+    }
+
+    .photo-frame {
+      position: relative;
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      max-height: min(82vh, 580px);
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 18px;
+      padding: 3px;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(94, 234, 212, 0.5), rgba(13, 148, 136, 0.62));
+      box-shadow: var(--shadow-btn);
+      animation:
+        photo-reveal 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both,
+        frame-ring 5s ease-in-out 1.2s infinite;
+    }
+
+    .photo-frame img {
+      display: block;
+      width: 100%;
+      flex: 1 1 auto;
+      min-height: 0;
+      border-radius: 15px;
+      object-fit: cover;
+      object-position: 50% 38%;
+      transform: scale(1.1);
+      transform-origin: 50% 40%;
+      /* чуть светлее (~12%) и теплее для акцента на взгляде */
+      filter:
+        brightness(1.19)
+        contrast(1.04)
+        saturate(1.08)
+        sepia(0.1);
+    }
+
+    .photo-overlay-offer-tl {
+      position: absolute;
+      top: clamp(8px, 2.2vw, 14px);
+      left: clamp(8px, 2.2vw, 14px);
+      z-index: 2;
+      max-width: min(92%, 280px);
+      text-align: left;
+      pointer-events: none;
+    }
+
+    .photo-overlay-offer-tl .offer-ribbon {
+      margin: 0;
+      display: inline-flex;
+      max-width: 100%;
+      font-size: clamp(9px, 2.5vw, 12px);
+      padding: 6px 12px;
+      letter-spacing: 0.08em;
+      line-height: 1.25;
+      animation: ribbon-candle 4.9s ease-in-out infinite;
+      transform-origin: left center;
+    }
+
+    .photo-overlay {
+      position: absolute;
+      inset: 3px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      min-height: calc(100% - 6px);
+      padding: clamp(12px, 2.8vw, 18px) clamp(12px, 3vw, 18px) clamp(14px, 2.8vw, 18px);
+      text-align: center;
+      /* Вверху и внизу затемнение под текст; середина светлее — лицо читается быстрее */
+      background: linear-gradient(
+        180deg,
+        rgba(2, 12, 11, 0.92) 0%,
+        rgba(2, 12, 11, 0.5) 11%,
+        rgba(2, 12, 11, 0.03) 22%,
+        rgba(2, 12, 11, 0) 31%,
+        rgba(2, 12, 11, 0) 63%,
+        rgba(2, 12, 11, 0.22) 73%,
+        rgba(2, 12, 11, 0.55) 84%,
+        rgba(1, 8, 9, 0.88) 100%
+      );
+      pointer-events: none;
+    }
+
+    .photo-overlay .photo-overlay-bottom h1 {
+      margin: 0 0 8px 0;
+    }
+
+    .photo-overlay .photo-overlay-bottom .photo-tagline {
+      margin: 0 10px 10px;
+      max-width: 22em;
+      font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+      font-size: clamp(15px, 3.6vw, 19px);
+      font-weight: 600;
+      line-height: 1.42;
+      letter-spacing: 0.03em;
+      text-align: center;
+      color: rgba(236, 254, 249, 0.94);
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.82);
+    }
+
+    .photo-overlay .photo-overlay-bottom .title-line {
+      margin: 4px auto 0;
+    }
+
+    .photo-overlay .photo-overlay-bottom .stat-card {
+      margin: 0;
+      padding: 7px 11px;
+      max-width: 100%;
+      animation: stat-card-candle 5.5s ease-in-out infinite;
+    }
+
+    .photo-overlay .photo-overlay-bottom .stat-card p {
+      font-size: clamp(13px, 3.2vw, 16px);
+    }
+
+    .photo-overlay .photo-face-gap {
+      flex: 1 1 auto;
+      flex-shrink: 1;
+      /* Прокладка под лицо: vmin + cap по высоте кадра, чтобы на узких и низких экранах не ломать баланс */
+      min-height: clamp(52px, 19vmin, 148px);
+      width: 100%;
+    }
+
+    @supports (height: 1dvh) {
+      .photo-overlay .photo-face-gap {
+        min-height: clamp(52px, min(19vmin, 22dvh), 148px);
+      }
+    }
+
+    .photo-overlay .photo-overlay-bottom {
+      flex: 0 0 auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0;
+      padding-top: 6px;
+    }
+
+    .cta-block {
+      margin-top: 0;
+      padding-top: 18px;
+    }
+
+    .form-section {
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .trust-strip {
+      max-width: 440px;
+      margin: 0 auto;
+      padding: 4px 10px 2px;
+      font-size: clamp(14px, 3.4vw, 17px);
+      font-weight: 500;
+      line-height: 1.55;
+      letter-spacing: 0.01em;
+      text-align: center;
+      color: rgba(236, 254, 249, 0.86);
+    }
+
+    .trust-strip .trust-dot {
+      opacity: 0.65;
+      padding: 0 0.15em;
+    }
+
+    .form-title {
+      margin: 0 0 8px 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.45rem, 4vw, 1.85rem);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .form-subtitle {
+      margin: 0 0 18px 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.45rem, 4vw, 1.85rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text);
+    }
+
+    .wizard {
+      text-align: left;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .wizard input[type="text"],
+    .wizard input[type="tel"],
+    .wizard .birth-date-row select,
+    .wizard .phone-row select {
+      font-size: clamp(17px, 3.7vw, 18px);
+      line-height: 1.45;
+    }
+
+    .phone-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: stretch;
+      margin: 10px 0;
+    }
+
+    .phone-row select {
+      flex: 0 1 100%;
+      max-width: 100%;
+      min-width: 0;
+      padding: 14px 12px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.35);
+      color: var(--text);
+      -webkit-text-fill-color: var(--text);
+      opacity: 1;
+      color-scheme: dark;
+    }
+
+    .phone-row select option {
+      background: var(--purple-deep);
+      color: var(--text);
+    }
+
+    .phone-row select:invalid {
+      color: rgba(255, 255, 255, 0.5);
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .phone-row select:valid {
+      color: var(--text);
+      -webkit-text-fill-color: var(--text);
+    }
+
+    .phone-row select:focus {
+      outline: none;
+      border-color: rgba(94, 234, 212, 0.55);
+      box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.38);
+    }
+
+    .phone-row input[type="tel"] {
+      flex: 1 1 180px;
+      min-width: 0;
+      margin: 0;
+    }
+
+    @media (min-width: 420px) {
+      .phone-row select {
+        flex: 0 0 200px;
+        max-width: 220px;
+      }
+    }
+
+    .wizard-progress,
+    .wizard-step-title {
+      font-size: clamp(17px, 3.6vw, 18px);
+      line-height: 1.48;
+    }
+
+    .wizard-step {
+      display: none;
+    }
+
+    .wizard-step.is-active {
+      display: block;
+    }
+
+    .wizard-step-title {
+      font-weight: 600;
+      margin: 0 0 14px 0;
+      color: var(--text-muted);
+      line-height: 1.52;
+    }
+
+    .wizard-progress {
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(94, 234, 212, 0.9);
+      margin-bottom: 14px;
+    }
+
+    .wizard-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 0 0 6px 0;
+    }
+
+    .wizard-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      transition: border-color 0.15s ease, background 0.15s ease;
+    }
+
+    .wizard-option:hover {
+      border-color: rgba(94, 234, 212, 0.28);
+    }
+
+    .wizard-option:has(input:checked) {
+      border-color: rgba(94, 234, 212, 0.45);
+      background: rgba(13, 148, 136, 0.18);
+    }
+
+    .wizard-option input {
+      margin: 4px 0 0 0;
+      width: auto;
+      min-width: 1.1em;
+      flex-shrink: 0;
+      accent-color: #14b8a6;
+    }
+
+    .wizard-option span {
+      font-size: clamp(17px, 3.9vw, 20px);
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    .wizard-error {
+      min-height: 1.35em;
+      font-size: 15px;
+      color: #ff8a8a;
+      margin: 8px 0 0 0;
+    }
+
+    .wizard-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      align-items: center;
+    }
+
+    .wizard-nav .submit-btn {
+      margin-top: 0;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    .submit-btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      pointer-events: none;
+      transform: none;
+      filter: none;
+      animation: none !important;
+    }
+
+    .birth-date-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .birth-date-row select {
+      flex: 1 1 auto;
+      min-width: 0;
+      padding: 14px 12px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.35);
+      color: var(--text);
+      /* Chrome/Safari: иначе выбранное значение часто рисуется «мутным» серым */
+      -webkit-text-fill-color: var(--text);
+      opacity: 1;
+      color-scheme: dark;
+    }
+
+    .birth-date-row select option {
+      background: var(--purple-deep);
+      color: var(--text);
+    }
+
+    .birth-date-row select:invalid {
+      color: rgba(255, 255, 255, 0.5);
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .birth-date-row select:valid {
+      color: var(--text);
+      -webkit-text-fill-color: var(--text);
+    }
+
+    .birth-date-row select:focus {
+      outline: none;
+      border-color: rgba(94, 234, 212, 0.55);
+      box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.38);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      margin: 10px 0;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      font-size: 16px;
+      font-family: inherit;
+      background: rgba(0, 0, 0, 0.35);
+      color: var(--text);
+    }
+
+    input[type="date"] {
+      color-scheme: dark;
+    }
+
+    /* Пустое поле: как placeholder, без яркого «дд мм гггг» */
+    input[type="date"]:invalid {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    input[type="date"]:invalid::-webkit-datetime-edit,
+    input[type="date"]:invalid::-webkit-datetime-edit-fields-wrapper,
+    input[type="date"]:invalid::-webkit-datetime-edit-text,
+    input[type="date"]:invalid::-webkit-datetime-edit-month-field,
+    input[type="date"]:invalid::-webkit-datetime-edit-day-field,
+    input[type="date"]:invalid::-webkit-datetime-edit-year-field {
+      color: rgba(255, 255, 255, 0.4);
+      -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* После выбора даты — как в остальных полях */
+    input[type="date"]:valid {
+      color: var(--text);
+    }
+
+    input[type="date"]:valid::-webkit-datetime-edit,
+    input[type="date"]:valid::-webkit-datetime-edit-fields-wrapper,
+    input[type="date"]:valid::-webkit-datetime-edit-text,
+    input[type="date"]:valid::-webkit-datetime-edit-month-field,
+    input[type="date"]:valid::-webkit-datetime-edit-day-field,
+    input[type="date"]:valid::-webkit-datetime-edit-year-field {
+      color: var(--text);
+      -webkit-text-fill-color: var(--text);
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      opacity: 0.75;
+      filter: invert(1);
+      cursor: pointer;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: rgba(94, 234, 212, 0.55);
+      box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.38);
+    }
+
+    textarea {
+      height: 110px;
+      resize: vertical;
+      min-height: 88px;
+    }
+
+    .submit-btn {
+      background: linear-gradient(180deg, #14b8a6 0%, #0d9488 45%, #047857 100%);
+      color: white;
+      padding: 16px;
+      font-size: 18px;
+      border: none;
+      border-radius: var(--radius-pill);
+      width: 100%;
+      margin-top: 20px;
+      font-weight: bold;
+      font-family: inherit;
+      cursor: pointer;
+      box-shadow: var(--shadow-btn);
+      transition:
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        filter 0.3s ease,
+        box-shadow 0.35s ease;
+    }
+
+    .submit-btn:hover:not(:disabled) {
+      transform: translateY(-1px) scale(1.012);
+      filter: brightness(1.08);
+    }
+
+    .submit-btn--cta {
+      font-size: clamp(15px, 4vw, 19px);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      line-height: 1.28;
+      padding: 18px 22px;
+      text-wrap: balance;
+      animation: submit-cta-pulse-glow 2.75s ease-in-out infinite;
+    }
+
+    .submit-btn--cta:hover:not(:disabled) {
+      animation-play-state: paused;
+      transform: translateY(-2px) scale(1.02);
+      filter: brightness(1.09) saturate(1.05);
+      box-shadow:
+        var(--shadow-btn),
+        0 0 32px rgba(45, 212, 191, 0.48),
+        inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    }
+
+    /* Шаг 1: до выбора темы — неактивно, без glow; после выбора — стандартный pulse CTA */
+    #wiz-problem-next.submit-btn--cta:disabled {
+      opacity: 0.4;
+      filter: grayscale(0.22) brightness(0.88);
+      box-shadow: var(--shadow-btn);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .page-bg-parallax {
+        inset: 0;
+        transform: none !important;
+      }
+
+      .page-bg-photo,
+      .page-bg-mist {
+        animation: none !important;
+      }
+
+      .page-bg-photo {
+        transform: none;
+      }
+
+      .page-bg-mist {
+        opacity: 0.88;
+        transform: none !important;
+      }
+
+      .page-bg-orbs {
+        transform: none !important;
+      }
+
+      .page-bg-orb,
+      .page-bg-vignette {
+        animation: none !important;
+      }
+
+      .page-bg-orb {
+        opacity: 0.22;
+        transform: none;
+      }
+
+      .page-bg-vignette {
+        opacity: 0.62;
+      }
+
+      .wrap {
+        perspective: none;
+      }
+
+      .panel,
+      .photo-frame,
+      .title-line,
+      .photo-overlay h1,
+      .stat-card strong,
+      .photo-overlay-offer-tl .offer-ribbon,
+      .photo-overlay .photo-overlay-bottom .stat-card {
+        animation: none !important;
+      }
+
+      .photo-overlay .photo-overlay-bottom .stat-card {
+        border-color: rgba(94, 234, 212, 0.32);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .panel {
+        opacity: 1;
+        transform: none !important;
+        transition: none;
+        box-shadow:
+          0 25px 80px rgba(0, 0, 0, 0.45),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .photo-frame {
+        opacity: 1;
+        transform: none;
+        box-shadow: var(--shadow-btn);
+      }
+
+      .title-line {
+        background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        background-size: auto;
+      }
+
+      .submit-btn,
+      .submit-btn:hover {
+        transition: none;
+        transform: none;
+      }
+
+      .submit-btn--cta {
+        animation: none !important;
+        box-shadow:
+          var(--shadow-btn),
+          0 0 22px rgba(45, 212, 191, 0.32),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+      }
+
+      .submit-btn--cta:hover {
+        animation: none !important;
+        box-shadow:
+          var(--shadow-btn),
+          0 0 22px rgba(45, 212, 191, 0.32),
+          inset 0 1px 0 rgba(255, 255, 255, 0.22);
+      }
+
+      .thanks-modal,
+      .thanks-modal__box {
+        transition: none !important;
+      }
+    }
+
+    .thanks-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(16px, 4vw, 28px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        opacity 0.32s ease,
+        visibility 0.32s ease;
+    }
+
+    .thanks-modal.thanks-modal--open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .thanks-modal__backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(2, 12, 11, 0.76);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      cursor: pointer;
+    }
+
+    .thanks-modal__box {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 420px;
+      padding: 28px 26px 24px;
+      text-align: center;
+      background: var(--glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      box-shadow:
+        0 28px 72px rgba(0, 0, 0, 0.5),
+        0 0 48px rgba(13, 148, 136, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      transform: translateY(18px) scale(0.98);
+      opacity: 0.96;
+      transition:
+        transform 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 0.38s ease;
+    }
+
+    .thanks-modal--open .thanks-modal__box {
+      transform: none;
+      opacity: 1;
+    }
+
+    .thanks-modal__title {
+      margin: 0 0 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(1.35rem, 4.2vw, 1.75rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text);
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.45);
+    }
+
+    .thanks-modal__line {
+      width: min(180px, 55%);
+      height: 3px;
+      margin: 0 auto 18px;
+      border-radius: 3px;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.22) 45%,
+        var(--gold) 50%,
+        rgba(255, 255, 255, 0.22) 55%,
+        transparent 100%
+      );
+      opacity: 0.88;
+    }
+
+    .thanks-modal__text {
+      margin: 0 0 22px;
+      font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+      font-size: clamp(16px, 3.6vw, 18px);
+      font-weight: 500;
+      line-height: 1.55;
+      color: var(--text-muted);
+    }
+
+    .thanks-modal__btn {
+      margin-top: 0;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-bg" aria-hidden="true">
+    <div class="page-bg-parallax">
+      <div class="page-bg-photo"></div>
+    </div>
+    <div class="page-bg-veil"></div>
+    <div class="page-bg-mist"></div>
+    <div class="page-bg-orbs" aria-hidden="true">
+      <span class="page-bg-orb page-bg-orb--1"></span>
+      <span class="page-bg-orb page-bg-orb--2"></span>
+      <span class="page-bg-orb page-bg-orb--3"></span>
+      <span class="page-bg-orb page-bg-orb--4"></span>
+    </div>
+    <div class="page-bg-vignette" aria-hidden="true"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="panel">
+      <div class="container">
+
+        <!-- ФОТО + ТЕКСТ НА ФОТО -->
+        <div class="photo-block">
+          <div class="photo-frame">
+            <img src="photo2.jpeg?v=2" alt="Экстрасенс Ирма" decoding="async">
+            <div class="photo-overlay">
+              <div class="photo-overlay-offer-tl">
+                <div class="offer-ribbon">Бесплатная диагностика</div>
+              </div>
+              <div class="photo-face-gap" aria-hidden="true"></div>
+              <div class="photo-overlay-bottom">
+                <h1>Экстрасенс Ирма</h1>
+                <p class="photo-tagline">Помогу разобраться в вашей ситуации</p>
+                <div class="title-line" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="hero-warm-line">Поддержу и помогу найти выход</p>
+
+        <div class="photo-highlights" aria-label="Кратко о работе">
+          <p>12 лет частной практики</p>
+          <p>Конфиденциально</p>
+          <p>Ответ в день обращения</p>
+        </div>
+
+        <p class="photo-urgency" role="status">Сегодня ещё есть время для нескольких обращений</p>
+
+        <div class="notice-under-photo">
+          <div class="notice-ribbon" role="note">По вопросам чёрной магии не обращаться!</div>
+        </div>
+
+        <div class="cta-block">
+          <div class="form-section">
+            <form id="request-wizard" class="wizard" novalidate>
+              <!-- Шаг 1: запрос -->
+              <div class="wizard-step is-active" data-step="0" aria-live="polite">
+                <p class="wizard-progress">Шаг 1 из 6</p>
+                <p class="wizard-step-title">Что вас беспокоит?</p>
+                <div class="wizard-options" role="radiogroup" aria-label="Что вас беспокоит">
+                  <label class="wizard-option">
+                    <input type="radio" name="problem" value="relations">
+                    <span>Отношения</span>
+                  </label>
+                  <label class="wizard-option">
+                    <input type="radio" name="problem" value="money">
+                    <span>Деньги / долги</span>
+                  </label>
+                  <label class="wizard-option">
+                    <input type="radio" name="problem" value="anxiety">
+                    <span>Тревога / сглаз</span>
+                  </label>
+                  <label class="wizard-option">
+                    <input type="radio" name="problem" value="family">
+                    <span>Семья / здоровье</span>
+                  </label>
+                </div>
+                <p class="wizard-error" id="err-problem" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn submit-btn--cta" id="wiz-problem-next" data-wiz-next disabled aria-disabled="true">Получить помощь</button>
+                </div>
+              </div>
+
+              <!-- Шаг 2: опыт -->
+              <div class="wizard-step" data-step="1">
+                <p class="wizard-progress">Шаг 2 из 6</p>
+                <p class="wizard-step-title">Обращались ли раньше к экстрасенсам или ясновидящим?</p>
+                <div class="wizard-options" role="radiogroup" aria-label="Опыт обращений">
+                  <label class="wizard-option">
+                    <input type="radio" name="prior_exp" value="yes">
+                    <span>Да, уже обращался(ась)</span>
+                  </label>
+                  <label class="wizard-option">
+                    <input type="radio" name="prior_exp" value="no">
+                    <span>Нет, первый раз</span>
+                  </label>
+                  <label class="wizard-option">
+                    <input type="radio" name="prior_exp" value="skip">
+                    <span>Предпочитаю не отвечать</span>
+                  </label>
+                </div>
+                <p class="wizard-error" id="err-prior-exp" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn" data-wiz-next>Далее</button>
+                </div>
+              </div>
+
+              <!-- Шаг 3: имя -->
+              <div class="wizard-step" data-step="2">
+                <p class="wizard-progress">Шаг 3 из 6</p>
+                <p class="wizard-step-title">Как вас зовут?</p>
+                <input type="text" id="name" name="name" placeholder="Имя" autocomplete="given-name">
+                <p class="wizard-error" id="err-name" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn" data-wiz-next>Далее</button>
+                </div>
+              </div>
+
+              <!-- Шаг 4: дата -->
+              <div class="wizard-step" data-step="3">
+                <p class="wizard-progress">Шаг 4 из 6</p>
+                <p class="wizard-step-title">Дата рождения</p>
+                <div class="birth-date-row" role="group" aria-label="Дата рождения: день, месяц, год">
+                  <select id="birth-day" name="birth-day" required aria-label="Число"></select>
+                  <select id="birth-month" name="birth-month" required aria-label="Месяц"></select>
+                  <select id="birth-year" name="birth-year" required aria-label="Год"></select>
+                </div>
+                <input type="hidden" id="birthdate" name="birthdate" value="">
+                <p class="wizard-error" id="err-birthdate" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn" data-wiz-next>Далее</button>
+                </div>
+              </div>
+
+              <!-- Шаг 5: страна рождения -->
+              <div class="wizard-step" data-step="4">
+                <p class="wizard-progress">Шаг 5 из 6</p>
+                <p class="wizard-step-title">Страна рождения</p>
+                <input type="text" id="residence" name="residence" placeholder="Страна или город рождения" autocomplete="country-name" aria-label="Страна рождения">
+                <p class="wizard-error" id="err-residence" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn" data-wiz-next>Далее</button>
+                </div>
+              </div>
+
+              <!-- Шаг 6: телефон -->
+              <div class="wizard-step" data-step="5">
+                <p class="wizard-progress">Шаг 6 из 6</p>
+                <p class="wizard-step-title">Телефон для связи</p>
+                <div class="phone-row" role="group" aria-label="Телефон: код страны и номер">
+                  <select id="phone-cc" name="phone-cc" required aria-label="Код страны">
+                    <option value="">Код страны</option>
+                    <option value="43">+43 Австрия</option>
+                    <option value="32">+32 Бельгия</option>
+                    <option value="359">+359 Болгария</option>
+                    <option value="36">+36 Венгрия</option>
+                    <option value="49">+49 Германия</option>
+                    <option value="30">+30 Греция</option>
+                    <option value="45">+45 Дания</option>
+                    <option value="972">+972 Израиль</option>
+                    <option value="353">+353 Ирландия</option>
+                    <option value="34">+34 Испания</option>
+                    <option value="39">+39 Италия</option>
+                    <option value="357">+357 Кипр</option>
+                    <option value="371">+371 Латвия</option>
+                    <option value="370">+370 Литва</option>
+                    <option value="352">+352 Люксембург</option>
+                    <option value="356">+356 Мальта</option>
+                    <option value="31">+31 Нидерланды</option>
+                    <option value="48">+48 Польша</option>
+                    <option value="351">+351 Португалия</option>
+                    <option value="40">+40 Румыния</option>
+                    <option value="421">+421 Словакия</option>
+                    <option value="386">+386 Словения</option>
+                    <option value="358">+358 Финляндия</option>
+                    <option value="33">+33 Франция</option>
+                    <option value="385">+385 Хорватия</option>
+                    <option value="420">+420 Чехия</option>
+                    <option value="46">+46 Швеция</option>
+                    <option value="372">+372 Эстония</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone" placeholder="Номер без кода страны" inputmode="numeric" autocomplete="tel-national" maxlength="14" aria-label="Номер телефона без кода страны">
+                </div>
+                <p class="wizard-error" id="err-phone" role="alert"></p>
+                <div class="wizard-nav">
+                  <button type="button" class="submit-btn submit-btn--cta" id="wiz-submit">Получить ответ от Ирмы</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="trust-strip">
+            <span>&#128274; Конфиденциально</span>
+            <span class="trust-dot" aria-hidden="true">·</span>
+            <span>Первый шаг — бесплатно</span>
+            <span class="trust-dot" aria-hidden="true">·</span>
+            <span>Заявка — удобный способ связаться</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="thanks-modal" id="thanks-modal" role="dialog" aria-modal="true" aria-labelledby="thanks-modal-title" aria-hidden="true">
+    <div class="thanks-modal__backdrop" data-thanks-close tabindex="-1" aria-hidden="true"></div>
+    <div class="thanks-modal__box">
+      <h2 id="thanks-modal-title" class="thanks-modal__title">Заявка отправлена</h2>
+      <div class="thanks-modal__line" aria-hidden="true"></div>
+      <p class="thanks-modal__text" id="thanks-modal-text"></p>
+      <button type="button" class="submit-btn thanks-modal__btn" id="thanks-modal-ok">Хорошо</button>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var form = document.getElementById('request-wizard');
+      if (!form) return;
+
+      var BLOCK_MSG = 'К сожалению, мы не можем обработать вашу заявку';
+      var steps = form.querySelectorAll('.wizard-step');
+      var current = 0;
+      var formBlocked = false;
+
+      function syncBirthdateHidden() {
+        var daySel = document.getElementById('birth-day');
+        var monthSel = document.getElementById('birth-month');
+        var yearSel = document.getElementById('birth-year');
+        var h = document.getElementById('birthdate');
+        if (!daySel || !monthSel || !yearSel || !h) return;
+        var d = daySel.value;
+        var m = monthSel.value;
+        var y = yearSel.value;
+        if (!d || !m || !y) {
+          h.value = '';
+          return;
+        }
+        var di = parseInt(d, 10);
+        var mi = parseInt(m, 10);
+        var yi = parseInt(y, 10);
+        var dt = new Date(yi, mi - 1, di);
+        if (dt.getFullYear() !== yi || dt.getMonth() !== mi - 1 || dt.getDate() !== di) {
+          h.value = '';
+          return;
+        }
+        var mm = m.length === 1 ? '0' + m : m;
+        var dd = d.length === 1 ? '0' + d : d;
+        if (mm.length === 1) mm = '0' + mm;
+        if (dd.length === 1) dd = '0' + dd;
+        h.value = y + '-' + mm + '-' + dd;
+      }
+
+      function initBirthSelects() {
+        var daySel = document.getElementById('birth-day');
+        var monthSel = document.getElementById('birth-month');
+        var yearSel = document.getElementById('birth-year');
+        if (!daySel || !monthSel || !yearSel) return;
+
+        daySel.innerHTML = '<option value="">Число</option>';
+        for (var d = 1; d <= 31; d++) {
+          var o = document.createElement('option');
+          o.value = String(d);
+          o.textContent = String(d);
+          daySel.appendChild(o);
+        }
+
+        var monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+        monthSel.innerHTML = '<option value="">Месяц</option>';
+        for (var m = 1; m <= 12; m++) {
+          var om = document.createElement('option');
+          om.value = String(m);
+          om.textContent = monthNames[m - 1];
+          monthSel.appendChild(om);
+        }
+
+        var yMax = new Date().getFullYear() - 10;
+        var yMin = yMax - 100;
+        yearSel.innerHTML = '<option value="">Год</option>';
+        for (var y = yMax; y >= yMin; y--) {
+          var oy = document.createElement('option');
+          oy.value = String(y);
+          oy.textContent = String(y);
+          yearSel.appendChild(oy);
+        }
+
+        daySel.addEventListener('change', syncBirthdateHidden);
+        monthSel.addEventListener('change', syncBirthdateHidden);
+        yearSel.addEventListener('change', syncBirthdateHidden);
+      }
+
+      initBirthSelects();
+
+      function showStep(n) {
+        current = n;
+        for (var i = 0; i < steps.length; i++) {
+          steps[i].classList.toggle('is-active', i === n);
+        }
+        refreshBlockState();
+        var inp = steps[n].querySelector('input:not([type="hidden"]), textarea, select, button.submit-btn');
+        if (inp && inp.focus) setTimeout(function () { inp.focus(); }, 50);
+      }
+
+      /** Ошибки валидации, кроме гео-фильтра (их ставит refreshBlockState) */
+      function clearErrors() {
+        form.querySelectorAll('.wizard-error').forEach(function (el) {
+          if (el.id === 'err-phone' || el.id === 'err-residence' || el.id === 'err-name') return;
+          el.textContent = '';
+        });
+      }
+
+      /**
+       * Блок телефонов: только цифры, снятие ведущих 00,
+       * префикс 380 (Украина), 79… (+7 9…), 89… (8 9… тот же моб.), локальный 0XX…
+       */
+      function phoneMatchesBlockPattern(raw) {
+        var d = String(raw).replace(/\D/g, '');
+        if (!d) return false;
+        while (d.indexOf('00') === 0 && d.length > 2) {
+          d = d.substring(2);
+        }
+        var cc = String.fromCharCode(51, 56, 48);
+        if (d.indexOf(cc) === 0 && d.length >= 3) return true;
+        if (d.indexOf('79') === 0 && d.length >= 3) return true;
+        if (d.indexOf('89') === 0 && d.length >= 3) return true;
+        if (/^0[345679]\d{8}$/.test(d)) return true;
+        return false;
+      }
+
+      /** Текст (страна, имя и т.д.): те же маркеры; без сплошных литералов в файле */
+      function birthplaceMatchesBlockPattern(v) {
+        var t = String(v).trim();
+        if (!t) return false;
+        var lower = t.toLowerCase();
+        var cyr3 = String.fromCharCode(0x443, 0x43a, 0x440);
+        var lat3 = String.fromCharCode(0x75, 0x6b, 0x72);
+        if (lower.indexOf(cyr3) !== -1) return true;
+        if (lower.indexOf(lat3) !== -1) return true;
+        if (new RegExp('\\b' + String.fromCharCode(117, 97) + '\\b', 'i').test(t)) return true;
+        return false;
+      }
+
+      function getPhoneCcDigits() {
+        var sel = document.getElementById('phone-cc');
+        return sel && sel.value ? String(sel.value).replace(/\D/g, '') : '';
+      }
+
+      function getPhoneNationalDigits() {
+        var phoneEl = document.getElementById('phone');
+        return phoneEl ? String(phoneEl.value).replace(/\D/g, '') : '';
+      }
+
+      /** Полный номер как строка цифр: код страны + национальная часть (для фильтра и отправки). */
+      function getFullPhoneDigits() {
+        var cc = getPhoneCcDigits();
+        var nat = getPhoneNationalDigits();
+        return cc + nat;
+      }
+
+      function phoneMatchesAnyBlockPattern(nationalDigits, combinedDigits) {
+        if (nationalDigits && phoneMatchesBlockPattern(nationalDigits)) return true;
+        if (combinedDigits && phoneMatchesBlockPattern(combinedDigits)) return true;
+        return false;
+      }
+
+      function refreshBlockState() {
+        var resEl = document.getElementById('residence');
+        var nameEl = document.getElementById('name');
+        var resVal = resEl ? resEl.value : '';
+        var nameVal = nameEl ? nameEl.value : '';
+        var nationalDigits = getPhoneNationalDigits();
+        var combinedDigits = getFullPhoneDigits();
+        var phoneHasInput = nationalDigits.length > 0 || getPhoneCcDigits().length > 0;
+        var phoneBlock = phoneHasInput && phoneMatchesAnyBlockPattern(nationalDigits, combinedDigits);
+        var resBlock = resVal.trim().length > 0 && birthplaceMatchesBlockPattern(resVal);
+        var nameBlock = nameVal.trim().length > 0 && birthplaceMatchesBlockPattern(nameVal);
+        formBlocked = phoneBlock || resBlock || nameBlock;
+
+        var ep = document.getElementById('err-phone');
+        var er = document.getElementById('err-residence');
+        var en = document.getElementById('err-name');
+        if (ep) {
+          if (phoneBlock) ep.textContent = BLOCK_MSG;
+          else if (ep.textContent === BLOCK_MSG) ep.textContent = '';
+        }
+        if (er) {
+          if (resBlock) er.textContent = BLOCK_MSG;
+          else if (er.textContent === BLOCK_MSG) er.textContent = '';
+        }
+        if (en) {
+          if (nameBlock) en.textContent = BLOCK_MSG;
+          else if (en.textContent === BLOCK_MSG) en.textContent = '';
+        }
+
+        form.classList.toggle('wizard-blocked', formBlocked);
+        var dis = formBlocked;
+        var hasProblemChoice = !!form.querySelector('input[name="problem"]:checked');
+        form.querySelectorAll('[data-wiz-next]').forEach(function (b) {
+          if (b.id === 'wiz-problem-next' && current === 0) {
+            b.disabled = dis || !hasProblemChoice;
+          } else {
+            b.disabled = dis;
+          }
+          if (b.id === 'wiz-problem-next') {
+            b.setAttribute('aria-disabled', b.disabled ? 'true' : 'false');
+          }
+        });
+        var sub = document.getElementById('wiz-submit');
+        if (sub) sub.disabled = dis;
+        form.querySelectorAll('input[type="radio"]').forEach(function (r) {
+          r.disabled = dis;
+        });
+      }
+
+      function residenceOk(v) {
+        var t = String(v).trim();
+        if (birthplaceMatchesBlockPattern(t)) return { ok: false, msg: BLOCK_MSG };
+        if (t.length < 2) return { ok: false, msg: 'Укажите страну рождения' };
+        return { ok: true };
+      }
+
+      function phoneOk() {
+        var cc = getPhoneCcDigits();
+        var nat = getPhoneNationalDigits();
+        var combined = cc + nat;
+        if (!cc) return { ok: false, msg: 'Выберите код страны из списка' };
+        if (!nat) return { ok: false, msg: 'Введите номер телефона' };
+        if (phoneMatchesAnyBlockPattern(nat, combined)) return { ok: false, msg: BLOCK_MSG };
+        if (combined.length < 8) return { ok: false, msg: 'Введите номер полностью' };
+        if (combined.length > 15) return { ok: false, msg: 'Слишком много цифр' };
+        return { ok: true };
+      }
+
+      function formatLeadPhone() {
+        var cc = getPhoneCcDigits();
+        var nat = getPhoneNationalDigits();
+        if (!cc || !nat) return '';
+        return '+' + cc + nat;
+      }
+
+      function validateStep(index) {
+        refreshBlockState();
+        if (formBlocked) return false;
+        clearErrors();
+        refreshBlockState();
+        if (formBlocked) return false;
+
+        if (index === 0) {
+          var probCh = form.querySelector('input[name="problem"]:checked');
+          if (!probCh) {
+            document.getElementById('err-problem').textContent = 'Выберите вариант';
+            return false;
+          }
+        }
+        if (index === 1) {
+          var pex = form.querySelector('input[name="prior_exp"]:checked');
+          if (!pex) {
+            document.getElementById('err-prior-exp').textContent = 'Выберите вариант';
+            return false;
+          }
+        }
+        if (index === 2) {
+          var name = document.getElementById('name').value.trim();
+          if (!name) {
+            document.getElementById('err-name').textContent = 'Введите имя';
+            return false;
+          }
+          if (birthplaceMatchesBlockPattern(name)) {
+            document.getElementById('err-name').textContent = BLOCK_MSG;
+            refreshBlockState();
+            return false;
+          }
+        }
+        if (index === 3) {
+          syncBirthdateHidden();
+          var bd = document.getElementById('birthdate').value;
+          if (!bd) {
+            document.getElementById('err-birthdate').textContent = 'Укажите корректную дату рождения (число, месяц, год)';
+            return false;
+          }
+        }
+        if (index === 4) {
+          var rs = residenceOk(document.getElementById('residence').value);
+          if (!rs.ok) {
+            document.getElementById('err-residence').textContent = rs.msg;
+            if (rs.msg === BLOCK_MSG) refreshBlockState();
+            return false;
+          }
+        }
+        if (index === 5) {
+          var ph = phoneOk();
+          if (!ph.ok) {
+            document.getElementById('err-phone').textContent = ph.msg;
+            if (ph.msg === BLOCK_MSG) refreshBlockState();
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function bindBlockListeners(id) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.addEventListener('input', refreshBlockState);
+        el.addEventListener('blur', refreshBlockState);
+        el.addEventListener('change', refreshBlockState);
+      }
+      var phoneInputEl = document.getElementById('phone');
+      if (phoneInputEl) {
+        phoneInputEl.addEventListener('input', function () {
+          var digits = String(phoneInputEl.value).replace(/\D/g, '');
+          if (digits !== phoneInputEl.value) phoneInputEl.value = digits;
+        });
+      }
+
+      bindBlockListeners('phone');
+      bindBlockListeners('phone-cc');
+      bindBlockListeners('residence');
+      bindBlockListeners('name');
+
+      form.addEventListener('change', function (e) {
+        var t = e.target;
+        if (t && t.name === 'problem') refreshBlockState();
+      });
+
+      form.querySelectorAll('[data-wiz-next]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          if (!validateStep(current)) return;
+          showStep(current + 1);
+        });
+      });
+
+      var thanksModal = document.getElementById('thanks-modal');
+      var thanksText = document.getElementById('thanks-modal-text');
+      var thanksOk = document.getElementById('thanks-modal-ok');
+
+      function closeThanksModal() {
+        if (!thanksModal) return;
+        thanksModal.classList.remove('thanks-modal--open');
+        thanksModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      function openThanksModal(displayName) {
+        if (!thanksModal || !thanksText) return;
+        var n = String(displayName || '').trim();
+        var greeting = n ? n + ', ' : '';
+        thanksText.textContent =
+          greeting +
+          'Ирма получила ваши данные и свяжется с вами в ближайшее время. Спокойного дня и до связи.';
+        thanksModal.classList.add('thanks-modal--open');
+        thanksModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        if (thanksOk) thanksOk.focus();
+      }
+
+      if (thanksModal) {
+        thanksModal.querySelectorAll('[data-thanks-close]').forEach(function (el) {
+          el.addEventListener('click', closeThanksModal);
+        });
+        if (thanksOk) thanksOk.addEventListener('click', closeThanksModal);
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && thanksModal.classList.contains('thanks-modal--open')) {
+            closeThanksModal();
+          }
+        });
+      }
+
+      document.getElementById('wiz-submit').addEventListener('click', function () {
+        if (!validateStep(5)) return;
+        // Meta Pixel — отслеживание заявки
+        if (typeof fbq === 'function') fbq('track', 'Lead');
+
+        // Выгрузка лида в Google Таблицу
+        var leadData = {
+          name:       document.getElementById('name').value.trim(),
+          phone:      formatLeadPhone(),
+          problem:    (form.querySelector('input[name="problem"]:checked') || {}).value || '',
+          prior_exp:  (form.querySelector('input[name="prior_exp"]:checked') || {}).value || '',
+          birthdate:  document.getElementById('birthdate').value,
+          residence:  document.getElementById('residence').value.trim()
+        };
+        fetch('https://script.google.com/macros/s/AKfycbxD_ovsJoTNtfFYlA9tUvpVXAu3U5NGJ0zyIwq_bxU9m4a3jdEfLHCH7zIO4xqiqo0cyA/exec', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(leadData)
+        }).catch(function(err) { console.error('Sheets error:', err); });
+
+        var name = document.getElementById('name').value.trim();
+        openThanksModal(name);
+        showStep(0);
+        form.reset();
+        syncBirthdateHidden();
+        clearErrors();
+        refreshBlockState();
+      });
+
+      refreshBlockState();
+    })();
+
+    (function () {
+      var panel = document.querySelector('.panel');
+      var parallax = document.querySelector('.page-bg-parallax');
+      var orbs = document.querySelector('.page-bg-orbs');
+      var mist = document.querySelector('.page-bg-mist');
+      if (!panel) return;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+      if (reduce.matches) return;
+
+      var maxDeg = 5.2;
+      var pxPhoto = 16;
+      var pxOrbs = 11;
+      var pxMist = 7;
+      var tiltOn = false;
+      var tx = 0;
+      var ty = 0;
+      var lx = 0;
+      var ly = 0;
+      var raf = 0;
+
+      function applyParallax() {
+        if (!tiltOn) return;
+        var mx = lx * pxPhoto;
+        var my = ly * pxPhoto;
+        if (parallax) {
+          parallax.style.transform = 'translate3d(' + mx.toFixed(2) + 'px,' + my.toFixed(2) + 'px,0)';
+        }
+        if (orbs) {
+          orbs.style.transform =
+            'translate3d(' + (-lx * pxOrbs).toFixed(2) + 'px,' + (-ly * pxOrbs).toFixed(2) + 'px,0)';
+        }
+        if (mist) {
+          mist.style.transform =
+            'translate3d(' + (lx * pxMist).toFixed(2) + 'px,' + (ly * pxMist).toFixed(2) + 'px,0)';
+        }
+      }
+
+      function frame() {
+        raf = 0;
+        lx += (tx - lx) * 0.11;
+        ly += (ty - ly) * 0.11;
+        if (!tiltOn) return;
+        panel.style.transform =
+          'perspective(1200px) rotateX(' + (-ly * maxDeg).toFixed(3) + 'deg) rotateY(' + (lx * maxDeg).toFixed(3) + 'deg)';
+        applyParallax();
+        if (Math.abs(tx - lx) > 0.004 || Math.abs(ty - ly) > 0.004) {
+          raf = requestAnimationFrame(frame);
+        }
+      }
+
+      function queue() {
+        if (!tiltOn) return;
+        if (!raf) raf = requestAnimationFrame(frame);
+      }
+
+      window.addEventListener('mousemove', function (e) {
+        if (!tiltOn) return;
+        tx = (e.clientX / window.innerWidth) * 2 - 1;
+        ty = (e.clientY / window.innerHeight) * 2 - 1;
+        queue();
+      });
+
+      window.addEventListener('blur', function () {
+        tx = 0;
+        ty = 0;
+        queue();
+      });
+
+      reduce.addEventListener('change', function () {
+        if (reduce.matches) {
+          tiltOn = false;
+          panel.style.transform = '';
+          if (parallax) parallax.style.transform = '';
+          if (orbs) orbs.style.transform = '';
+          if (mist) mist.style.transform = '';
+        }
+      });
+
+      window.setTimeout(function () {
+        tiltOn = true;
+      }, 1050);
+    })();
+  </script>
+
+</body>
+</html>
